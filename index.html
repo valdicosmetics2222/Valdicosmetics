@@ -1,52 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valdi Cosmetics</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="sidebar">
+        <h2>Категории</h2>
+        <a href="#">Lavish Care</a>
+        <a href="#">JRL</a>
+        <a href="#">Oivita39</a>
+        <a href="#">Allwaves</a>
+        <a href="#">Fadiam</a>
+        <a href="#">Farcom</a>
+        <a href="#">Simple Use</a>
+        <a href="#">Roial</a>
+        <a href="#">Еднократни материали и консумативи</a>
+    </div>
+    <div class="content">
         <h1>Valdi Cosmetics</h1>
-        <p>Производител на еднократни материали и Официален дистрибутор на:</p>
-        <div class="logos">
-            <img src="logos/lavish-care.png" alt="Lavish Care">
-            <img src="logos/jrl.png" alt="JRL">
-            <img src="logos/oivita39.png" alt="Oivita39">
-            <img src="logos/allwaves.png" alt="Allwaves">
-            <img src="logos/fadiam.png" alt="Fadiam">
-            <img src="logos/farcom.png" alt="Farcom">
-            <img src="logos/simple-use.png" alt="Simple Use">
-            <img src="logos/roial.png" alt="Roial">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Lavish Care</a></li>
-                <li><a href="#">JRL</a></li>
-                <li><a href="#">Oivita39</a></li>
-                <li><a href="#">Allwaves</a></li>
-                <li><a href="#">Fadiam</a></li>
-                <li><a href="#">Farcom</a></li>
-                <li><a href="#">Simple Use</a></li>
-                <li><a href="#">Roial</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="products">
-            <h2>Lavish Care</h2>
-            <div class="product">
-                <img src="images/vanilla.jpg" alt="Душ гел Ванилия">
-                <p>Душ гел Ванилия 500мл</p>
-                <strong>8.50 лв</strong>
-            </div>
-            <div class="product">
-                <img src="images/lime.jpg" alt="Душ гел Лайм">
-                <p>Душ гел Лайм 500мл</p>
-                <strong>8.50 лв</strong>
-            </div>
-        </section>
-    </main>
+        <p>Производител на еднократни материали и официален дистрибутор на професионални марки козметика.</p>
+    </div>
 </body>
 </html>
